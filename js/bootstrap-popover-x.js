@@ -172,10 +172,11 @@
 
             $(window).resize(function () {
                 if ($dialog.hasClass('kv-popover-active')) {
-                    self.hide();
-                    setTimeout(function () {
-                        self.show(true);
-                    }, 50);
+                    // self.hide();
+                    // setTimeout(function () {
+                    //     self.show(true);
+                    // }, 50);
+                    self.refreshPosition();
                 }
             });
         },
